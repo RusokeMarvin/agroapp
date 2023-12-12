@@ -1,0 +1,27 @@
+.header nav{
+    height: 4em; 
+    background: #a1ce86; 
+    width: 100%;
+    margin-top: -1em;
+    color: white;
+  }
+  .header nav ul .linked{
+    text-decoration: none; /* Remove underline */
+    color: white;
+  }
+
+  .header nav ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: -2.5em;
+    font-size: large;
+  }
+
+  .header nav ul li:hover{
+    background: rgb(175, 174, 174);
+    border-radius: 3px;
+    cursor: pointer;
+  }
