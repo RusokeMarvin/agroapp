@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQs.css';
+import Header from '../../Components/Header/Header';
 
 function FAQs() {
   const [activeFaq, setActiveFaq] = useState(-1);
@@ -14,6 +15,7 @@ function FAQs() {
 
   return (
     <div className='questions'>
+       <Header/>
       <section>
         <h1>FAQs</h1>
         <div className='faqContainer'>

@@ -8,8 +8,8 @@ function Header() {
       <nav>
       <h1>AWCI-AGRICULTURE</h1> 
       <ul>
-      <Link to="/home" className='linked'> <li>Home</li></Link>
-        <li>About Us</li>
+      <Link to="/landing"  className='linked'> <li>Home</li></Link>
+      <Link to="/blog" className='linked'><li>Blog</li></Link>
         <li>Gallery</li>
         <Link to="/questions" className='linked'> <li>FAQs</li></Link>
       </ul>

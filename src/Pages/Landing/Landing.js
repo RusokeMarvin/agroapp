@@ -91,21 +91,21 @@ const Landing =()=> {
 <div className='team'>
   <div>
     <img src={person1}/>
-    <h1>George Williams</h1>
-    <h2>Head of Marketing </h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of different communities</p>
+    <h1>Yusuf Kavuma</h1>
+    <h2>Founder and Executive Director</h2>
+    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
   <div>
     <img src={person2}/>
-    <h1>George Williams</h1>
-    <h2>Head of Marketing </h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of different communities</p>
+    <h1>Lugaizi Mujib</h1>
+    <h2>Director Finance and Management</h2>
+    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
   <div>
     <img src={person3}/>
-    <h1>George Williams</h1>
-    <h2>Head of Marketing </h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of different communities</p>
+    <h1>Nalubega Asha</h1>
+    <h2>Director Public relations </h2>
+    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>  
 </div>
     <Footer/>

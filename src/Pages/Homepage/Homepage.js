@@ -5,6 +5,7 @@ import Product from "./../../Product";
 import { productData, responsive } from "./../../data";
 import Header from "../../Components/Header/Header";
 import Footer from '../../Components/Footer/Footer';
+import FeedPost from "../Feed/Feed";
 
 export default function Home() {
   const product = productData.map((item) => (
@@ -22,6 +23,7 @@ export default function Home() {
       <Carousel showDots={true} responsive={responsive}>
         {product}
       </Carousel>
+      <FeedPost/>
       <Footer/>
     </div>
   );
