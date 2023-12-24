@@ -25,3 +25,16 @@
     border-radius: 3px;
     cursor: pointer;
   }
+  .anothernav{
+    display: none;
+  }
+
+  @media screen and (max-width:768px){
+    nav ul{
+      flex-direction: column;
+      z-index: 3;
+      position: relative;
+      background: #faa51a;
+      width: 4em;
+    }
+  }

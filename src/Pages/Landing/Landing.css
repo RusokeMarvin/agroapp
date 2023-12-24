@@ -89,9 +89,16 @@ gap: 1rem;
 
 .landing .images div h3{
   margin-top: -3.5em;
+  margin-left: 1em;
   position: absolute;
   font-size: xx-large;
   color: white;
   max-width: 20em;
 }
 
+@media screen and (max-width:768px){
+  .landing .images div h3{
+    max-width: 17em;
+    font-size: x-large;
+  }
+}
