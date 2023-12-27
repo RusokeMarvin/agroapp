@@ -90,14 +90,14 @@ To enhance the economic value of oil seeds, AWCI-AGRICULTURE actively seeks nati
     {
       id: 6,
       imageurl: irrigation,
-      name: "Water Conservation",
+      name: "Irrigation",
       description: "We harness modern irrigation techniques",
       shortDescription: "Delve into the value addition...", 
     },
     {
       id: 7,
       imageurl: teach,
-      name: "Training Programs",
+      name: "Training ",
       description: "We conduct training programs to educate local farmers",
       shortDescription: "Delve into the value addition...", 
     },

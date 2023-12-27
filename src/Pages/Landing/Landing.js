@@ -101,12 +101,6 @@ const Landing =()=> {
     <h2>Director Finance and Management</h2>
     <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
-  <div>
-    <img src={person3}/>
-    <h1>Nalubega Asha</h1>
-    <h2>Director Public relations </h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
-  </div>  
 </div>
     <Footer/>
     </div>

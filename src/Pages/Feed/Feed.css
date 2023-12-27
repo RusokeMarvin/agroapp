@@ -42,7 +42,7 @@ button {
 .post img,
 .post video {
   max-width: 100%;
-  height: 85vh;
+  height: auto;
 
 
 }

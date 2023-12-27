@@ -101,4 +101,15 @@ gap: 1rem;
     max-width: 17em;
     font-size: x-large;
   }
+  .landing .info p {
+    margin-left: 1.9em;
+  }
+  .landing .info h1 {
+    margin-left: 1em;
+  }
+  .landing .images img{
+    width: 100%;
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2); 
+}
 }
