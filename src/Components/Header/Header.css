@@ -5,6 +5,7 @@
     margin-top: -1em;
     color: white;
   }
+
   .header nav ul .linked{
     text-decoration: none; /* Remove underline */
     color: white;
@@ -25,10 +26,7 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  .anothernav{
-    display: none;
-  }
-
+ 
   @media screen and (max-width:768px){
     nav ul{
       flex-direction: column;
@@ -36,5 +34,14 @@
       position: relative;
       background: #faa51a;
       width: 4em;
+    }
+  }
+
+  .menu{
+    display: none;
+  }
+  @media screen and (max-width:768px){
+    .menu{
+      display: block;
     }
   }

@@ -13,7 +13,7 @@ export default function Home() {
       name={item.name}
       url={item.imageurl}
       price={item.price}
-      description={item.description}
+      description={item.shortDescription}
     />
   ));
 

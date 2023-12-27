@@ -19,6 +19,7 @@
   
   .card button {
     border: none;
+    border-radius: 5px;
     outline: 0;
     padding: 12px;
     color: white;
