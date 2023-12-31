@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+// Feed.js
+import React, { useState, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
+import { firestore, storage } from "./../../firebase";
+import { collection, addDoc, getDocs, onSnapshot } from 'firebase/firestore';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import './Feed.css';
 
 const Post = ({ content, media }) => {
   return (
     <div className="post">
       <p>{content}</p>
-      {media}
+      {media && media.startsWith('http') ? (
+        <img className="media-preview" src={media} alt="Post image" />
+      ) : null}
     </div>
   );
 };
@@ -14,39 +20,45 @@ const Post = ({ content, media }) => {
 const FeedPost = () => {
   const [posts, setPosts] = useState([]);
   const [content, setContent] = useState("");
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const postsCollection = collection(firestore, 'posts');
+      const postsSnapshot = await getDocs(postsCollection);
+      const postsData = postsSnapshot.docs.map(doc => doc.data());
+      setPosts(postsData);
+    };
+
+    const unsubscribe = onSnapshot(collection(firestore, 'posts'), (snapshot) => {
+      const postsData = snapshot.docs.map(doc => doc.data());
+      setPosts(postsData);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
     accept: "image/*,video/*",
     multiple: false,
   });
 
-  const handlePostClick = () => {
-    const newPost = {
-      content,
-      media: renderMedia(),
-    };
-    setPosts([newPost, ...posts]);
-    setContent("");
-  };
-
-  const renderMedia = () => {
+  const handlePostClick = async () => {
     if (acceptedFiles.length > 0) {
       const file = acceptedFiles[0];
-      const contentType = file.type;
-      const contentUrl = URL.createObjectURL(file);
+      const storageRef = ref(storage, `images/${file.name}`);
 
-      if (contentType.startsWith("image")) {
-        // Inline styles for the image preview
-        return <img className="media-preview" src={contentUrl} alt="Post image" />;
-      } else if (contentType.startsWith("video")) {
-        // Inline styles for the video preview
-        return (
-          <video className="media-preview" controls>
-            <source src={contentUrl} type={contentType} />
-          </video>
-        );
-      }
+      // Upload the file to Firebase Storage
+      await uploadBytes(storageRef, file);
+
+      // Get the download URL of the uploaded file
+      const downloadURL = await getDownloadURL(storageRef);
+
+      // Add a new post with the image URL to Firestore
+      const postsCollection = collection(firestore, 'posts');
+      await addDoc(postsCollection, { content, mediaUrl: downloadURL });
+
+      setContent("");
     }
-    return null;
   };
 
   return (
@@ -61,12 +73,14 @@ const FeedPost = () => {
         onChange={(e) => setContent(e.target.value)}
       />
       <div className="preview-container">
-        {renderMedia()}
+        {acceptedFiles.length > 0 && (
+          <img className="media-preview" src={URL.createObjectURL(acceptedFiles[0])} alt="Post image" />
+        )}
       </div>
       <button onClick={handlePostClick}>Post</button>
       <div className="feed-posts">
         {posts.map((post, index) => (
-          <Post key={index} content={post.content} media={post.media} />
+          <Post key={index} content={post.content} media={post.mediaUrl} />
         ))}
       </div>
     </div>

@@ -3,6 +3,7 @@ import './Header.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX} from '@fortawesome/free-solid-svg-icons'
+import ourlogo from '../../Images/ourlogo.jpeg'
 
 function Header() {
   const showSidebar = () =>{
@@ -17,6 +18,7 @@ function Header() {
     <div className='header'>
       <nav>
       <h1>AWCI-AGRICULTURE  </h1> 
+      <img src={ourlogo}/>
       
       <ul className='sidebar'>
       < FontAwesomeIcon className="menu2" icon={faX} onClick={hideSidebar}/>
@@ -28,7 +30,7 @@ function Header() {
       <ul>
       <Link to="/landing"  className='linked2'> <li>Home</li></Link>
       <Link to="/blog" className='linked2'><li>Blog</li></Link>
-        <li className='gallery'>Gallery</li>
+      <Link to="/gallery" className='linked2'><li>Gallery</li></Link>
         <Link to="/questions" className='linked2'> <li>FAQs</li></Link>
         < FontAwesomeIcon className="menu" icon={faBars} onClick={showSidebar}/>
       </ul>

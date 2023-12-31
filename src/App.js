@@ -9,6 +9,7 @@ import Homepage from './Pages/Homepage/Homepage'
 import Landing from './Pages/Landing/Landing';
 import FAQs from './Pages/FAQs/FAQs';
 import Detail from './Pages/Homepage/Detail';
+import Gallery from './Pages/Gallery/Gallery';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/landing" element={<Landing />}/>
       <Route path="/blog" element={<Homepage />}/>
       <Route path="/detail" element={<Detail />} />
+      <Route path="/gallery" element={<Gallery />} />
   </Routes>
  
  </div>

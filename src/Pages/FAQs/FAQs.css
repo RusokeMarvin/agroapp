@@ -43,7 +43,11 @@
 .answer p{
 padding-top: 1rem;
 line-height: 1.6;
-font-size: 1.4rem;
+font-size: 1.2rem;
+}
+
+.question h3{
+    font-size: 1.3rem;
 }
 
 .faq.active .answer{
