@@ -76,7 +76,7 @@ To enhance the economic value of oil seeds, AWCI-AGRICULTURE actively seeks nati
     {
       id: 4,
       imageurl: vegs,
-      name: "Vegatables",
+      name: "Vegetables",
       description: "Discover the bounty of our vegetable cultivation initiatives.",
       shortDescription: "Discover the bounty of our vegetable cultivation initiatives. From organic farming practices to a diverse range of vegetables, we take you on a journey of responsible and nutritious agriculture.", 
     },

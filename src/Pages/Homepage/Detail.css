@@ -1,9 +1,15 @@
 .detail img{
     border-radius: 15px;
     max-width: 100%; /* Maximum width is the width of the container */
-    height: auto; 
+    height: 70vh; 
 }
 
 .detail p{
     font-size: large;
+}
+
+@media screen and (max-width:768px) {
+    .detail img{
+        height: auto; 
+    } 
 }
