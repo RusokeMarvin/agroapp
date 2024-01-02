@@ -90,6 +90,7 @@ const Landing =()=> {
   <br/>
   <img src={involved} />
   <div className='infos'>
+    <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
   <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
   <button>GET INVOLVED</button>
   </div>
