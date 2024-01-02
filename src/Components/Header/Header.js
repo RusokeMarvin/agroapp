@@ -26,12 +26,14 @@ function Header() {
       <Link to="/blog" className='linked'><li>Blog</li></Link>
         <Link to='/gallery' className='linked'><li>Gallery</li></Link>
         <Link to="/questions" className='linked'> <li>FAQs</li></Link>
+        <Link to="http://health.awciinternational.org/" className='linked'> <li>Services</li></Link>
       </ul>
       <ul>
       <Link to="/landing"  className='linked2'> <li>Home</li></Link>
       <Link to="/blog" className='linked2'><li>Blog</li></Link>
       <Link to='/gallery' className='linked2'><li>Gallery</li></Link>
         <Link to="/questions" className='linked2'> <li>FAQs</li></Link>
+        <Link to="http://health.awciinternational.org/" className='linked2'> <li>Services</li></Link>
         < FontAwesomeIcon className="menu" icon={faBars} onClick={showSidebar}/>
       </ul>
       </nav>

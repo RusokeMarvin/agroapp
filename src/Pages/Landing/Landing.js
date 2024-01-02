@@ -1,8 +1,5 @@
 import Header from './../../Components/Header/Header';
 import landing from './../../Images/landing.jpg'
-import person1 from './../../Images/person1.jpg'
-import person2 from './../../Images/person2.jpg'
-import person3 from './../../Images/person3.jpg'
 import './Landing.css'
 import Footer from '../../Components/Footer/Footer';
 import 'slick-carousel/slick/slick.css';
@@ -10,9 +7,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import seeds from './../../Images/OIL-SEED.jpg'
-import goat from './../../Images/goat.jpg'
-import broiler from './../../Images/Broiler.jpg'
+import goat from './../../Images/goat1.jpeg'
+import broiler from './../../Images/broiler1.jpeg'
 import vegs from './../../Images/vegs.jpg'
+import involved from './../../Images/Teach.jpg'
 
 
 
@@ -87,20 +85,14 @@ const Landing =()=> {
 <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
 <br/>
 </div>
-<h1 className='teamhead'>Our Team</h1>
-<div className='team'>
-  <div>
-    <img src={person1}/>
-    <h1>Yusuf Kavuma</h1>
-    <h2>Founder and Executive Director</h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
+<h1 >GET INVOLVED</h1>
+<div className='getinvolved'>
+  <img src={involved} />
+  <div className='infos'>
+  <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
+  <button>GET INVOLVED</button>
   </div>
-  <div>
-    <img src={person2}/>
-    <h1>Lugaizi Mujib</h1>
-    <h2>Director Finance and Management</h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
-  </div>
+
 </div>
     <Footer/>
     </div>
