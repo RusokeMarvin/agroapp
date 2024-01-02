@@ -56,7 +56,7 @@ const Landing =()=> {
         </div>
         <div>
           <img src={seeds} alt={`Slide 2`} />
-          <h3>Delve into the value addition process of oil seeds AWCI-AGRICULTURE.</h3>
+          <h3>Delve into the value addition process of oil seeds with AWCI-AGRICULTURE.</h3>
         </div>
         <div>
           <img src={goat} alt={`Slide 3`} />
@@ -64,11 +64,11 @@ const Landing =()=> {
         </div>
         <div>
           <img src={vegs} alt={`Slide 4`} />
-          <h3>Discover the bounty of our vegetable cultivation initiatives AWCI-AGRICULTURE.</h3>
+          <h3>Discover the bounty of our vegetable cultivation initiatives with AWCI-AGRICULTURE.</h3>
         </div>
         <div>
           <img src={broiler} alt={`Slide 5`} />
-          <h3>Explore our innovative approach to broiler chicken rearing AWCI-AGRICULTURE. </h3>
+          <h3>Explore our innovative approach to broiler chicken rearing with AWCI-AGRICULTURE. </h3>
         </div>
       </Slider>
       
