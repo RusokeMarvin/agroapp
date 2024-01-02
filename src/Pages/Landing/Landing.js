@@ -56,19 +56,19 @@ const Landing =()=> {
         </div>
         <div>
           <img src={seeds} alt={`Slide 2`} />
-          <h3>Delve into the value addition process of oil seeds.</h3>
+          <h3>Delve into the value addition process of oil seeds AWCI-AGRICULTURE.</h3>
         </div>
         <div>
           <img src={goat} alt={`Slide 3`} />
-          <h3>Dive into the world of goat farming with AWCI</h3>
+          <h3>Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
         </div>
         <div>
           <img src={vegs} alt={`Slide 4`} />
-          <h3>Discover the bounty of our vegetable cultivation initiatives.</h3>
+          <h3>Discover the bounty of our vegetable cultivation initiatives AWCI-AGRICULTURE.</h3>
         </div>
         <div>
           <img src={broiler} alt={`Slide 5`} />
-          <h3>Explore our innovative approach to broiler chicken rearing. </h3>
+          <h3>Explore our innovative approach to broiler chicken rearing AWCI-AGRICULTURE. </h3>
         </div>
       </Slider>
       
@@ -87,6 +87,7 @@ const Landing =()=> {
 </div>
 <h1 >GET INVOLVED</h1>
 <div className='getinvolved'>
+  <br/>
   <img src={involved} />
   <div className='infos'>
   <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
