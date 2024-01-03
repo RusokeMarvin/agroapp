@@ -1,5 +1,8 @@
 import Header from './../../Components/Header/Header';
 import landing from './../../Images/landing.jpg'
+import person1 from './../../Images/person1.jpg'
+import person2 from './../../Images/person2.jpg'
+import person3 from './../../Images/person3.jpg'
 import './Landing.css'
 import Footer from '../../Components/Footer/Footer';
 import 'slick-carousel/slick/slick.css';
@@ -94,6 +97,25 @@ const Landing =()=> {
   <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
   <button>GET INVOLVED</button>
   </div>
+
+</div>
+<h1 >OUR TEAM</h1>
+<div className='ourteam'>
+<div className='team'>
+  <div>
+    <img src={person1}/>
+    <h1>Yusuf Kavuma</h1>
+    <h2>Founder and Executive Director</h2>
+    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
+  </div>
+  <div>
+    <img src={person2}/>
+    <h1>Lugaizi Mujib</h1>
+    <h2>Director Finance and Management</h2>
+    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
+  </div>
+</div>
+
 
 </div>
     <Footer/>
