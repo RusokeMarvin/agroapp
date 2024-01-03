@@ -85,4 +85,7 @@
     .menu{
       display: block;
     }
+    .header nav img{
+      margin-left: 16.5em;
+    }
   }
