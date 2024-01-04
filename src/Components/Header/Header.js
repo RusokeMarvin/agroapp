@@ -3,7 +3,7 @@ import './Header.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX} from '@fortawesome/free-solid-svg-icons'
-import ourlogo from '../../Images/ourlogo.jpeg'
+import ourlogo from '../../Images/logo.png'
 
 function Header() {
   const showSidebar = () =>{
@@ -18,7 +18,7 @@ function Header() {
     <div className='header'>
       <nav>
       <h1>AWCI-AGRICULTURE  </h1> 
-      <img src={ourlogo}/>
+      <img src={ourlogo} alt='logo'/>
       
       <ul className='sidebar'>
       < FontAwesomeIcon className="menu2" icon={faX} onClick={hideSidebar}/>
@@ -26,14 +26,12 @@ function Header() {
       <Link to="/blog" className='linked'><li>Blog</li></Link>
         <Link to='/gallery' className='linked'><li>Gallery</li></Link>
         <Link to="/questions" className='linked'> <li>FAQs</li></Link>
-        <Link to="http://health.awciinternational.org/" className='linked'> <li>Services</li></Link>
       </ul>
       <ul>
       <Link to="/landing"  className='linked2'> <li>Home</li></Link>
       <Link to="/blog" className='linked2'><li>Blog</li></Link>
       <Link to='/gallery' className='linked2'><li>Gallery</li></Link>
         <Link to="/questions" className='linked2'> <li>FAQs</li></Link>
-        <Link to="http://health.awciinternational.org/" className='linked2'> <li>Services</li></Link>
         < FontAwesomeIcon className="menu" icon={faBars} onClick={showSidebar}/>
       </ul>
       </nav>
