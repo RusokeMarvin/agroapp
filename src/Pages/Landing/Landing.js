@@ -88,7 +88,7 @@ const Landing =()=> {
 <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
 <br/>
 </div>
-<h1 >GET INVOLVED</h1>
+<h1 className='heading'>GET INVOLVED</h1>
 <div className='getinvolved'>
   <br/>
   <img src={involved} />
@@ -99,7 +99,7 @@ const Landing =()=> {
   </div>
 
 </div>
-<h1 >OUR TEAM</h1>
+<h1 className='heading'>OUR TEAM</h1>
 <div className='ourteam'>
 <div className='team'>
   <div>

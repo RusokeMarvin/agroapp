@@ -6,6 +6,9 @@
 .landing h1 {
   font-family: 'Yeseva One', cursive;
 }
+.landing .heading {
+  text-align: center;
+}
 .landing .info h1 {
     font-family: 'Oswald', sans-serif;
     margin-left: 2.5em;
@@ -135,7 +138,7 @@ margin-bottom: 2em;
 .landing .getinvolved img{
   width: 400px;
   height: 70vh;
-  margin: 0;
+  
 }
 
 .landing .getinvolved .infos p{
