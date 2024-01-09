@@ -107,7 +107,7 @@ const Landing =()=> {
 </div>
 <h2 className='contact'>CONTACT US</h2>
 <h3 className='subcontact'>Let's Unite to improve our agricultural practices together</h3>
-<p className='subsubcontact'>Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
+<p className='subsubcontact' data-aos="slide-up">Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
 <div className='contactform'>
   <h2>Contact Form</h2>
   <form>
