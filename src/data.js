@@ -1,11 +1,7 @@
-import seeds from './Images/OIL-SEED.jpg'
 import goat from './Images/goat.jpg'
 import broiler from './Images/Broiler.jpg'
-import vegs from './Images/vegs.jpg'
 import support from './Images/support.jpg'
 import irrigation from './Images/irrigation.jpg'
-import teach from './Images/Teach.jpg'
-import soil from './Images/soil.jpg'
 
 export const responsive = {
     superLargeDesktop: {
@@ -31,29 +27,8 @@ export const responsive = {
   export const productData = [
     {
       id: 1,
-      imageurl: seeds,
-      name: "Oil-Seeds",
-      description: "Delve into the value addition process of oil seeds.",
-      shortDescription: "Delve into the value addition process of oil seeds. Understand how we enhance the economic value of oil seeds, contributing to the local economy and promoting self-sufficiency in the agricultural sector.\
-      oil seed value addition\
-1. Oil Seed Selection and Sourcing:\
-The value addition process at AWCI-AGRICULTURE begins with the careful selection and sourcing of high-quality oil seeds from local farmers. By working closely with farmers, we ensure that the seeds meet stringent quality standards, promoting fair trade practices and supporting local economies.\
-2. Quality-Controlled Processing Units:\
-Help us establish our state-of-the-art processing units employing cutting-edge technology to extract oil from the seeds while maintaining the highest quality standards. Rigorous quality control measures are implemented throughout the process, ensuring that the final products meet both national and international quality benchmarks.\
-3. Diversified Product Range:\
-We believe in adding value at every stage of the process. AWCI-AGRICULTURE offers a diversified range of oil seed products, including cold-pressed oils, oil cakes for animal feed, and by-products for other industries. This not only maximizes the economic value of the oil seeds but also reduces waste, contributing to a more sustainable production cycle.\
-4. Empowering Local Entrepreneurs:\
-As part of our commitment to community empowerment, we collaborate with local entrepreneurs to establish small-scale processing units. This not only creates employment opportunities but also decentralizes the value addition process, ensuring that the benefits are distributed across different regions in Uganda.\
-5. Capacity Building and Training:\
-AWCI-AGRICULTURE invests in capacity building and training programs for local farmers and entrepreneurs. Through workshops and hands-on training, we impart knowledge on modern processing techniques, quality control measures, and market access strategies, empowering individuals to actively participate in the oil seed value addition chain.\
-6. Market Access and Promotion:\
-To enhance the economic value of oil seeds, AWCI-AGRICULTURE actively seeks national and international markets for our products. We engage in marketing initiatives that highlight the quality, sustainability, and social impact of our value-added oil seed products, ultimately contributing to the growth of the local economy.\
-", 
-    },
-    {
-      id: 2,
       imageurl: goat,
-      name: "Goat Farming",
+      name: "Goat Farming Practices",
       description: "Dive into the world of goat farming with AWCI",
       shortDescription: "Dive into the world of goat farming with AWCI-AGRICULTURE. \
       Explore our sustainable practices, the quality of our goat breeds, and how we contribute to the local community through responsible and profitable goat farming.\
@@ -67,46 +42,25 @@ To enhance the economic value of oil seeds, AWCI-AGRICULTURE actively seeks nati
        Through selective breeding, we work towards enhancing disease resistance, reproductive efficiency, and overall productivity. This not only benefits our farmers but also contributes to the broader improvement of goat breeds in the region.We empower farmers with the knowledge and skills necessary for successful goat farming. Regular training sessions cover topics such as animal husbandry, disease prevention, and sustainable land management.", 
     },
     {
-      id: 3,
+      id: 2,
       imageurl: broiler,
-      name: "Broiler Chicken ",
+      name: "Broiler Chicken Rearing ",
       description: "Explore our innovative approach to broiler chicken rearing. ",
       shortDescription: "Explore our innovative approach to broiler chicken rearing. Learn about the ethical and sustainable methods we employ, ensuring the highest quality poultry while supporting the livelihoods of local and small scale farmers.", 
     },
     {
-      id: 4,
-      imageurl: vegs,
-      name: "Vegetables",
-      description: "Discover the bounty of our vegetable cultivation initiatives.",
-      shortDescription: "Discover the bounty of our vegetable cultivation initiatives. From organic farming practices to a diverse range of vegetables, we take you on a journey of responsible and nutritious agriculture.", 
-    },
-    {
-      id: 5,
+      id: 3,
       imageurl: support,
-      name: "Farmers' Support",
+      name: "Farmers' Support and Training",
       description: "Explore the comprehensive support we provide to farmers.",
       shortDescription: "Explore the comprehensive support we provide to farmers. From training programs to access to resources, we are dedicated to empowering farmers for sustainable agricultural practices.", 
     },
     {
-      id: 6,
+      id: 4,
       imageurl: irrigation,
-      name: "Irrigation",
+      name: "Irrigation and Water Conservation",
       description: "We harness modern irrigation techniques",
       shortDescription: "Delve into the value addition...", 
-    },
-    {
-      id: 7,
-      imageurl: teach,
-      name: "Training ",
-      description: "We conduct training programs to educate local farmers",
-      shortDescription: "Delve into the value addition...", 
-    },
-    {
-      id: 8,
-      imageurl: soil,
-      name: " Soil Health",
-      description: "We employ strategic crop rotation practices to enhance soil health ",
-      shortDescription: "We employ strategic crop rotation practices to enhance soil health", 
     },
   ];
 

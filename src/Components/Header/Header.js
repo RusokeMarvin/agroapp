@@ -23,13 +23,13 @@ function Header() {
       <ul className='sidebar'>
       < FontAwesomeIcon className="menu2" icon={faX} onClick={hideSidebar}/>
       <Link to="/landing"  className='linked'> <li>Home</li></Link>
-      <Link to="/blog" className='linked'><li>Blog</li></Link>
+      <Link to="/blog" className='linked'><li>Our Services</li></Link>
         <Link to='/gallery' className='linked'><li>Gallery</li></Link>
         <Link to="/questions" className='linked'> <li>FAQs</li></Link>
       </ul>
       <ul>
       <Link to="/landing"  className='linked2'> <li>Home</li></Link>
-      <Link to="/blog" className='linked2'><li>Blog</li></Link>
+      <Link to="/blog" className='linked2'><li>Our Services</li></Link>
       <Link to='/gallery' className='linked2'><li>Gallery</li></Link>
         <Link to="/questions" className='linked2'> <li>FAQs</li></Link>
         < FontAwesomeIcon className="menu" icon={faBars} onClick={showSidebar}/>
