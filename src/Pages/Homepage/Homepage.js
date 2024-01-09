@@ -23,7 +23,7 @@ export default function Home() {
       <Carousel showDots={true} responsive={responsive}>
         {product}
       </Carousel>
-      <FeedPost/>
+      <FeedPost />
       <Footer/>
     </div>
   );

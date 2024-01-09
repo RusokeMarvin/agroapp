@@ -5,10 +5,12 @@ import { firestore, storage } from "./../../firebase";
 import { collection, addDoc, getDocs, onSnapshot } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import './Feed.css';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Post = ({ content, media }) => {
   return (
-    <div className="post">
+    <div className="post" data-aos="zoom-in" >
       <p>{content}</p>
       {media && media.startsWith('http') ? (
         <img className="media-preview" src={media} alt="Post image" />
@@ -60,6 +62,9 @@ const FeedPost = () => {
       setContent("");
     }
   };
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[]);
 
   return (
     <div className="feed">
@@ -78,7 +83,7 @@ const FeedPost = () => {
         )}
       </div>
       <button onClick={handlePostClick}>Post</button>
-      <div className="feed-posts">
+      <div className="feed-posts" >
         {posts.map((post, index) => (
           <Post key={index} content={post.content} media={post.mediaUrl} />
         ))}
