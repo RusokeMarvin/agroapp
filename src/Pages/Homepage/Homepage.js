@@ -11,6 +11,15 @@ export default function Home() {
   const product = productData.map((item) => (
     <Product
       name={item.name}
+      headingone={item.headingone}
+      headingtwo={item.headingtwo}
+      headingthree={item.headingthree}
+      headingfour={item.headingfour}
+      headingfive={item.headingfive}
+      headingsix={item.headingsix}
+      headingseven={item.headingseven}
+      headingeight={item.headingeight}
+      headingnine={item.headingnine}
       url={item.imageurl}
       price={item.price}
       description={item.shortDescription}
