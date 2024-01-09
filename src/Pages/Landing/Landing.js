@@ -14,6 +14,8 @@ import goat from './../../Images/goat1.jpeg'
 import broiler from './../../Images/broiler1.jpeg'
 import vegs from './../../Images/vegs.jpg'
 import involved from './../../Images/Teach.jpg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 
@@ -48,6 +50,10 @@ const Landing =()=> {
     autoplaySpeed: 2000, //
   };
 
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[]);
+  
   return (
     <div className='landing'>
     <Header/>
@@ -67,7 +73,7 @@ const Landing =()=> {
         </div>
         <div>
           <img src={vegs} alt={`Slide 4`} />
-          <h3>Discover the bounty of our vegetable cultivation initiatives with AWCI-AGRICULTURE.</h3>
+          <h3>Discover the bounty of our vegetable cultivation initiatives with AWCI.</h3>
         </div>
         <div>
           <img src={broiler} alt={`Slide 5`} />
@@ -89,7 +95,7 @@ const Landing =()=> {
 <br/>
 </div>
 <h1 className='heading'>GET INVOLVED</h1>
-<div className='getinvolved'>
+<div className='getinvolved' data-aos="slide-up">
   <br/>
   <img src={involved} />
   <div className='infos'>
@@ -99,16 +105,67 @@ const Landing =()=> {
   </div>
 
 </div>
+<h2 className='contact'>CONTACT US</h2>
+<h3 className='subcontact'>Let's Unite to improve our agricultural practices together</h3>
+<p className='subsubcontact'>Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
+<div className='contactform'>
+  <h2>Contact Form</h2>
+  <form>
+  <br/>
+    <div className='names'>
+      <div>
+      <label>First Name</label>
+      <br/>
+      <br/>
+      <input type='name'/>
+      </div>
+      <div >
+      <label>Last Name</label>
+      <br/>
+      <br/>
+      <input type='name'/>
+      </div>
+    </div>
+    <br/>
+    <div className='bigfield'>
+    <div className='fields'>
+    <label>Email</label>
+    <br/>
+    <br/>
+    <input type='email'/>
+    </div>
+    <br/>
+    <div className='fields'>
+    <label>Subject</label>
+    <br/>
+    <br/>
+    <input type='text'/>
+    </div>
+    <br/>
+    <div className='fields'>
+    <label>Message</label>
+    <br/>
+    <br/>
+    <input type='text'/>
+    </div>
+    <br/>
+    <div className='fields'>
+    <input type='submit' className='submit'/>
+    </div>
+    </div>
+    <br/>
+  </form>
+</div>
 <h1 className='heading'>OUR TEAM</h1>
 <div className='ourteam'>
 <div className='team'>
-  <div>
+  <div data-aos="zoom-in" >
     <img src={person1}/>
     <h1>Yusuf Kavuma</h1>
     <h2>Founder and Executive Director</h2>
     <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
-  <div>
+  <div data-aos="zoom-in">
     <img src={person2}/>
     <h1>Lugaizi Mujib</h1>
     <h2>Director Finance and Management</h2>
