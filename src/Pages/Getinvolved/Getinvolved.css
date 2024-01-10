@@ -1,12 +1,12 @@
 
-.team{
+.invo{
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2em;
     }
     
-    .team div{
+    .invo div{
         font-family:'Titillium Web', sans-serif;
         text-align: center;
         height: 25em;
@@ -14,7 +14,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 2); 
         border-radius: 10px;
     }
-    .team div:hover {
+    .invo div:hover {
         background: #0091dc;
         color: white;
       }
@@ -24,9 +24,13 @@
    } 
 
    @media screen and (max-width:768px) {
-    .team{
+    .invo{
         align-items: center;
         flex-direction: column;
         }
    }
     
+   .invo .handshake{
+    width: 80px;
+    height: 80px;
+   }
