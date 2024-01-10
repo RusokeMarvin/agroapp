@@ -10,6 +10,7 @@ import Landing from './Pages/Landing/Landing';
 import FAQs from './Pages/FAQs/FAQs';
 import Detail from './Pages/Homepage/Detail';
 import Gallery from './Pages/Gallery/Gallery';
+import Getinvolved from './Pages/Getinvolved/Getinvolved';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/blog" element={<Homepage />}/>
       <Route path="/detail" element={<Detail />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/getinvolved" element={<Getinvolved />} />
   </Routes>
  
  </div>

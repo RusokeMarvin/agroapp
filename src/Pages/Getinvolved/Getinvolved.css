@@ -1,0 +1,21 @@
+
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2em;
+    }
+    
+    .team div{
+        font-family:'Titillium Web', sans-serif;
+        text-align: center;
+        height: 25em;
+        width: 15em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 2); 
+        border-radius: 10px;
+    }
+
+   .involved{
+    text-align: center;
+   } 
+    

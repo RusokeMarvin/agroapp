@@ -15,6 +15,7 @@ import vegs from './../../Images/vegs.jpg'
 import involved from './../../Images/Teach.jpg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -92,7 +93,7 @@ const Landing =()=> {
   <div className='infos'>
     <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
   <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
-  <button>GET INVOLVED</button>
+  <Link to='/getinvolved'><button>GET INVOLVED</button></Link>
   </div>
 
 </div>
@@ -148,7 +149,6 @@ const Landing =()=> {
   </form>
 </div>
 <h1 className='heading'>OUR TEAM</h1>
-<div className='ourteam'>
 <div className='team'>
   <div data-aos="zoom-in" >
     <img src={person1}/>
@@ -162,9 +162,6 @@ const Landing =()=> {
     <h2>Director Finance and Management</h2>
     <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
-</div>
-
-
 </div>
     <Footer/>
     </div>
