@@ -33,10 +33,9 @@
         align-items: center;
         flex-direction: column;
         }
-    .hands img{
-        max-width: 100%;
-        height: auto;
-    }
+        .hands .lets{
+            height: 60vh;
+           }
    }
     
    .invo .handshake{
