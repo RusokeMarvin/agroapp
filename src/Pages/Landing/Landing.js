@@ -2,7 +2,6 @@ import Header from './../../Components/Header/Header';
 import landing from './../../Images/landing.jpg'
 import person1 from './../../Images/person1.jpg'
 import person2 from './../../Images/person2.jpg'
-import person3 from './../../Images/person3.jpg'
 import './Landing.css'
 import Footer from '../../Components/Footer/Footer';
 import 'slick-carousel/slick/slick.css';
@@ -61,7 +60,7 @@ const Landing =()=> {
     <Slider {...settings}>
         <div>
           <img src={landing} alt={`Slide 1`} />
-          <h3>Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
+          <h3  data-aos="slide-up"  data-aos-duration="800">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
         </div>
         <div>
           <img src={goat} alt={`Slide 2`} />
