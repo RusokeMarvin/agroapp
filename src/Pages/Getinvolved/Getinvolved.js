@@ -5,7 +5,8 @@ import './Getinvolved.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBullhorn, faChild, faHandshake, faMoneyBill, faMoneyBill1, faMoneyBillAlt, faPeopleCarryBox, faPrayingHands, faUser, faUserGraduate, faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import { faBullhorn, faChild, faHandshake, faMoneyBill,faPeopleCarryBox, faPrayingHands, faUser, faUserGraduate, faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import involved from './../../Images/involved.jpg'
 
 function Getinvolved() {
     useEffect(()=>{
@@ -14,8 +15,9 @@ function Getinvolved() {
   return (
     <div >
         <Header/>
+        <div className='hands'><img src={involved}/></div>
         <h1 className='involved'>Get Involved with AWCI Agriculture Initiatives</h1>
-        <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone</p>
+        <p className='para1'>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone</p>
         <h1 className='involved'>Ways to Get Involved</h1>
         <div >
         <div className='invo'>
