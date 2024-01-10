@@ -24,4 +24,11 @@
    .involved{
     text-align: center;
    } 
+
+   @media screen and (max-width:768px) {
+    .team{
+        align-items: center;
+        flex-direction: column;
+        }
+   }
     
