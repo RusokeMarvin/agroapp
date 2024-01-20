@@ -50,6 +50,10 @@ const Landing =()=> {
     autoplaySpeed: 2000, //
   };
 
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[]);
+  
   return (
     <div className='landing'>
     <Header/>
@@ -57,7 +61,7 @@ const Landing =()=> {
     <Slider {...settings}>
         <div className='wrapper'>
           <img src={landing} alt={`Slide 1`} />
-          <h3 className="typing-demo">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
+          <h3  className="typing-demo">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
         </div>
         <div className='wrapper'>
           <img src={goat} alt={`Slide 2`} />
@@ -65,7 +69,7 @@ const Landing =()=> {
         </div>
         <div className='wrapper'>
           <img src={broiler} alt={`Slide 4`} />
-          <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI. </h3>
+          <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI-AGRICULTURE. </h3>
         </div>
       </Slider>
       
