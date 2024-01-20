@@ -12,14 +12,28 @@ const LoadingIndicator = () => (
     Loading...
   </div>
 );
+const generateTitle = (content) => {
+  // Split content into words
+  const words = content.split(' ');
+
+  // Determine the number of words to include in the title
+  const titleLength = Math.min(5, words.length);
+
+  // Join the first few words to form the title
+  const title = words.slice(0, titleLength).join(' ').toUpperCase();
+
+  return title;
+};
 
 const Post = ({ content, media }) => {
+  const title = generateTitle(content);
   return (
-    <div className="post" data-aos="zoom-in">
-      <p>{content}</p>
+    <div className="post" data-aos="slide-up">
       {media && media.startsWith('http') ? (
         <img className="media-preview" src={media} alt="Post image" />
       ) : null}
+         <h3>{title}</h3>
+      <p>{content}</p>
     </div>
   );
 };

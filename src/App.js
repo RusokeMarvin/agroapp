@@ -11,6 +11,7 @@ import FAQs from './Pages/FAQs/FAQs';
 import Detail from './Pages/Homepage/Detail';
 import Gallery from './Pages/Gallery/Gallery';
 import Getinvolved from './Pages/Getinvolved/Getinvolved';
+import FeedPost from './Pages/Posting/Posting';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Route path="/detail" element={<Detail />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/getinvolved" element={<Getinvolved />} />
+      <Route path="/postawci123" element={<FeedPost />} />
   </Routes>
  
  </div>

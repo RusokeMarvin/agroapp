@@ -303,3 +303,21 @@ width: 25em;
     width: 19em;
   }
 }
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 100%; /* Initially set the text below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  transition: top 0.5s ease-in-out; /* Add a smooth transition */
+}
+
+.image-text.visible {
+  top: 50%; /* Slide the text up to the center when visible */
+}
