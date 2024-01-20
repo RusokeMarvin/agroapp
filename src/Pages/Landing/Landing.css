@@ -1,5 +1,4 @@
 .landing .images img{
-    filter: blur(2px);
     width: 100%;
     height: 85vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 2); 
@@ -194,6 +193,7 @@ margin-bottom: 2em;
   font-size: xx-large;
   color: white;
   max-width: 20em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
