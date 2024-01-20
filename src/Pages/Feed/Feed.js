@@ -32,7 +32,7 @@ const Post = ({ content, media }) => {
       {media && media.startsWith('http') ? (
         <img className="media-preview" src={media} alt="Post image" />
       ) : null}
-         <h3>{title}</h3>
+         <h3>{title + '.....'}</h3>
       <p>{content}</p>
     </div>
   );
