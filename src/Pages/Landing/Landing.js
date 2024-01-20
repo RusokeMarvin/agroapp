@@ -69,7 +69,7 @@ const Landing =()=> {
         </div>
         <div className='wrapper'>
           <img src={broiler} alt={`Slide 4`} />
-          <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI-AGRICULTURE. </h3>
+          <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI. </h3>
         </div>
       </Slider>
       
