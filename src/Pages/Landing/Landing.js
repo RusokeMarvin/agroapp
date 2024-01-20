@@ -50,26 +50,22 @@ const Landing =()=> {
     autoplaySpeed: 2000, //
   };
 
-  useEffect(()=>{
-    Aos.init({duration:2000});
-  },[]);
-  
   return (
     <div className='landing'>
     <Header/>
     <div className='images'>
     <Slider {...settings}>
-        <div>
+        <div className='wrapper'>
           <img src={landing} alt={`Slide 1`} />
-          <h3  data-aos="slide-up"  data-aos-duration="800">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
+          <h3 className="typing-demo">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
         </div>
-        <div>
+        <div className='wrapper'>
           <img src={goat} alt={`Slide 2`} />
-          <h3>Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
+          <h3 className="typing-demo">Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
         </div>
-        <div>
+        <div className='wrapper'>
           <img src={broiler} alt={`Slide 4`} />
-          <h3>Explore our innovative approach to broiler chicken rearing with AWCI-AGRICULTURE. </h3>
+          <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI-AGRICULTURE. </h3>
         </div>
       </Slider>
       
