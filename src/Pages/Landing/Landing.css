@@ -219,8 +219,8 @@ margin-bottom: 2em;
 
 @media screen and (max-width:768px){
   .landing .images div .pentagon{
-    margin-top: -12.5em;
-    margin-left: 1.5em;
+    margin-top: -11.0em;
+    margin-left: 1.3em;
     width: 15em;
   }
   .landing .images div h3{
