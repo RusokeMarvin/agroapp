@@ -85,12 +85,12 @@ const Landing =()=> {
         </div>
         <div className='wrapper'>
           <img src={goat} alt={`Slide 2`} />
-          <div className='pentagon'><h5>Sustainable Goat Farming </h5></div>
+          <div className='pentagon'><h5>Goat Farming </h5></div>
           <h3 className="typing-demo">Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
         </div>
         <div className='wrapper'>
           <img src={broiler} alt={`Slide 4`} />
-          <div className='pentagon'><h5>Broiler Chicken Rearing</h5></div>
+          <div className='pentagon'><h5>Broiler Chicken</h5></div>
           <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI. </h3>
         </div>
       </Slider>
