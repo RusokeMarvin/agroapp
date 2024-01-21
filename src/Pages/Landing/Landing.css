@@ -184,13 +184,33 @@ margin-bottom: 2em;
 .slide:hover .slide-text {
   opacity: 1;
 }
-
+.landing .images div .pentagon{
+  position: fixed;
+  margin-top: -14.5em;
+  margin-left: 3.3em;
+  height: 3em;
+  width: 25em;
+  border-top-right-radius: 3em; /* Adjust the value for the desired pointiness */
+  border-bottom-right-radius: 3em; 
+  background-color: white;
+  font-size: large;
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+} 
+.landing .images div .pentagon h5{
+  font-size: 1.5rem;
+  position: absolute;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
 
 .landing .images div h3{
   margin-top: -3.5em;
   margin-left: 1em;
   position: absolute;
-  font-size: xx-large;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: white;
   max-width: 20em;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -198,10 +218,15 @@ margin-bottom: 2em;
 
 
 @media screen and (max-width:768px){
+  .landing .images div .pentagon{
+    margin-top: -12.5em;
+    margin-left: 1.5em;
+    max-width: 20em;
+  }
   .landing .images div h3{
-    margin-top: -8.5em;
-    max-width: 8.5em;
-    font-size: x-large;
+    margin-top: -5em;
+    max-width: 10.5em;
+    font-size: 2em;
   }
   .landing .info p {
     margin-left: 1.9em;
