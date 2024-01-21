@@ -16,11 +16,30 @@ import involved from './../../Images/Teach.jpg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom';
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 const Landing =()=> {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [successMessage, setSuccessMessage] = useState('');
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0x2guw7', 'template_teorvmm', form.current, '2m2X5MCgmX8OAC92t')
+      .then((result) => {
+          console.log(result.text);
+          setSuccessMessage('Email sent successfully!');
+          setTimeout(() => {
+            setSuccessMessage('');
+          }, 3000);
+          form.current.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   const images = [
     landing,
@@ -102,14 +121,14 @@ const Landing =()=> {
 <p className='subsubcontact' data-aos="slide-up">Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
 <div className='contactform' data-aos="zoom-in">
   <h2>Contact Form</h2>
-  <form >
+  <form ref={form} onSubmit={sendEmail}>
   <br/>
     <div className='names'>
       <div>
       <label>First Name</label>
       <br/>
       <br/>
-      <input type='name'/>
+      <input type='name' name="user_name"/>
       </div>
       <div >
       <label>Last Name</label>
@@ -124,14 +143,14 @@ const Landing =()=> {
     <label>Email</label>
     <br/>
     <br/>
-    <input type='email'/>
+    <input type='email' name="user_email"/>
     </div>
     <br/>
     <div className='fields'>
     <label>Subject</label>
     <br/>
     <br/>
-    <input type='text'/>
+    <input type='text' name="message"/>
     </div>
     <br/>
     <div className='fields'>
@@ -142,11 +161,12 @@ const Landing =()=> {
     </div>
     <br/>
     <div className='fields'>
-    <input type='submit' className='submit'/>
+    <input type='submit' value="Send" className='submit'/>
     </div>
     </div>
     <br/>
   </form>
+   {successMessage && <p className='success-message'>{successMessage}</p>}
 </div>
 <h1 className='heading'>OUR TEAM</h1>
 <div className='team'>

@@ -335,3 +335,11 @@ width: 25em;
     border-color: transparent
   }
 }
+
+.success-message{
+  background-color: green;
+  width: auto;
+  border-radius: 5px;
+  height: 3em;
+  color: white;
+}
