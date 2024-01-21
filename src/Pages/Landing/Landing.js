@@ -80,17 +80,17 @@ const Landing =()=> {
     <Slider {...settings}>
         <div className='wrapper'>
           <img src={landing} alt={`Slide 1`} />
-          <div className='pentagon'><h5>Welcome to AWCI AGRICULTURE</h5></div>
+          <div className='pentagon'><h5>Welcome to AWCI</h5></div>
           <h3  className="typing-demo">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
         </div>
         <div className='wrapper'>
           <img src={goat} alt={`Slide 2`} />
-          <div className='pentagon'><h5>Sustainable Goat Farming Practices </h5></div>
+          <div className='pentagon'><h5>Sustainable Goat Farming </h5></div>
           <h3 className="typing-demo">Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
         </div>
         <div className='wrapper'>
           <img src={broiler} alt={`Slide 4`} />
-          <div className='pentagon'><h5>Sustainable Broiler Chicken Rearing</h5></div>
+          <div className='pentagon'><h5>Broiler Chicken Rearing</h5></div>
           <h3 className="typing-demo">Explore our innovative approach to broiler chicken rearing with AWCI. </h3>
         </div>
       </Slider>
