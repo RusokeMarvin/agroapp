@@ -10,6 +10,9 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import seeds from './../../Images/OIL-SEED.jpg'
 import goat from './../../Images/goat1.jpeg'
+import about from './../../Images/about.jpg'
+import mission from './../../Images/mission.jpeg'
+import vision from './../../Images/vision.jpg'
 import broiler from './../../Images/broiler1.jpeg'
 import vegs from './../../Images/vegs.jpg'
 import involved from './../../Images/Teach.jpg'
@@ -96,29 +99,75 @@ const Landing =()=> {
       </Slider>
       
       </div>
-    <div className='info'>
-      <br/>
-    <h1>ABOUT US</h1>
-    <p>Welcome to AWCI-AGRICULTURE, where agriculture meets social impact! Discover our commitment to assisting farmers and promoting sustainable practices in goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p>
-    <p>Learn about our mission, vision, and the team behind AWCI-AGRICULTURE. Explore our journey in creating a positive impact on the agricultural sector and empowering local farmers.</p>
-    <h1>MISSION</h1>
-    <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p>
-
-<h1>VISION</h1>
-<p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
-<br/>
-</div>
-<h1 className='heading'>GET INVOLVED</h1>
-<div className='getinvolved' data-aos="slide-up">
-  <br/>
-  <img src={involved} />
-  <div className='infos'>
-    <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
-  <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
-  <Link to='/getinvolved'><button>GET INVOLVED</button></Link>
-  </div>
-
-</div>
+    <div className='infoinfo'>
+     <h1>About Us</h1>
+     <p>Welcome to AWCI-AGRICULTURE, where agriculture meets social impact! Discover our commitment to assisting farmers and promoting sustainable practices in goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
+     
+   </div>
+   <div className='infocontainer'>
+    <section className='about'>
+      <div className='aboutimage'>
+        <img src={about} alt='aboutus'/>
+      </div>
+      <div className='aboutcontent'>
+        <h2>Explore</h2>
+        <p>Learn about our mission, vision, and the team behind AWCI-AGRICULTURE. Explore our journey in creating a positive impact on the agricultural sector and empowering local farmers.</p>
+        <a href='#' className='readmore'>Read More</a>
+      </div>
+    </section>
+   </div>
+   <div className='infoinfo'>
+     <h1>Mission</h1>
+     <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
+     
+   </div>
+   <div className='infocontainer'>
+    <section className='about'>
+      <div className='aboutimage'>
+        <img src={mission} alt='mission'/>
+      </div>
+      <div className='aboutcontent'>
+        <h2>Explore</h2>
+        <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p>
+        <a href='#' className='readmore'>Read More</a>
+      </div>
+    </section>
+   </div>
+   <div className='infoinfo'>
+     <h1>Vision</h1>
+     <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
+     
+   </div>
+   <div className='infocontainer'>
+    <section className='about'>
+      <div className='aboutimage'>
+        <img src={vision} alt='vision'/>
+      </div>
+      <div className='aboutcontent'>
+        <h2>Explore</h2>
+        <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
+        <a href='#' className='readmore'>Read More</a>
+      </div>
+    </section>
+   </div>
+   <div className='infoinfo'>
+     <h1>Get Involved</h1>
+     <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
+     
+   </div>
+   <div className='infocontainer'>
+    <section className='about'>
+      <div className='aboutimage'>
+        <img src={involved} alt='aboutus'/>
+      </div>
+      <div className='aboutcontent'>
+        <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
+        <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
+        <a href='/getinvolved' className='readmore'>Read More</a>
+      </div>
+    </section>
+   </div>
+  
 <h2 className='contact'  data-aos="slide-up">CONTACT US</h2>
 <h3 className='subcontact'  data-aos="slide-up">Let's Unite to improve our agricultural practices together</h3>
 <p className='subsubcontact' data-aos="slide-up">Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
