@@ -104,7 +104,7 @@ const Landing =()=> {
      <p>Welcome to AWCI-AGRICULTURE, where agriculture meets social impact! Discover our commitment to assisting farmers and promoting sustainable practices in goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
      
    </div>
-   <div className='infocontainer'>
+   <div className='infocontainer' data-aos="slide-up">
     <section className='about'>
       <div className='aboutimage'>
         <img src={about} alt='aboutus'/>
@@ -121,7 +121,7 @@ const Landing =()=> {
      <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
      
    </div>
-   <div className='infocontainer'>
+   <div className='infocontainer'data-aos="slide-up">
     <section className='about'>
       <div className='aboutimage'>
         <img src={mission} alt='mission'/>
@@ -138,7 +138,7 @@ const Landing =()=> {
      <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
      
    </div>
-   <div className='infocontainer'>
+   <div className='infocontainer' data-aos="slide-up">
     <section className='about'>
       <div className='aboutimage'>
         <img src={vision} alt='vision'/>
@@ -155,7 +155,7 @@ const Landing =()=> {
      <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
      
    </div>
-   <div className='infocontainer'>
+   <div className='infocontainer' data-aos="slide-up">
     <section className='about'>
       <div className='aboutimage'>
         <img src={involved} alt='aboutus'/>
