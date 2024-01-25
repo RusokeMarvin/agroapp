@@ -99,7 +99,7 @@ const Landing =()=> {
       </Slider>
       
       </div>
-    <div className='infoinfo'>
+    <div className='infoinfo' data-aos="slide-up">
      <h1>About Us</h1>
      <p>Welcome to AWCI-AGRICULTURE, where agriculture meets social impact! Discover our commitment to assisting farmers and promoting sustainable practices in goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
      
@@ -109,14 +109,14 @@ const Landing =()=> {
       <div className='aboutimage'>
         <img src={about} alt='aboutus'/>
       </div>
-      <div className='aboutcontent'>
+      <div className='aboutcontent' >
         <h2>Explore</h2>
         <p>Learn about our mission, vision, and the team behind AWCI-AGRICULTURE. Explore our journey in creating a positive impact on the agricultural sector and empowering local farmers.</p>
         <a href='#' className='readmore'>Read More</a>
       </div>
     </section>
    </div>
-   <div className='infoinfo'>
+   <div className='infoinfo'data-aos="slide-up">
      <h1>Mission</h1>
      <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p> 
      
@@ -133,7 +133,7 @@ const Landing =()=> {
       </div>
     </section>
    </div>
-   <div className='infoinfo'>
+   <div className='infoinfo' data-aos="slide-up">
      <h1>Vision</h1>
      <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
      
@@ -143,14 +143,14 @@ const Landing =()=> {
       <div className='aboutimage'>
         <img src={vision} alt='vision'/>
       </div>
-      <div className='aboutcontent'>
+      <div className='aboutcontent' >
         <h2>Explore</h2>
         <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
         <a href='#' className='readmore'>Read More</a>
       </div>
     </section>
    </div>
-   <div className='infoinfo'>
+   <div className='infoinfo' data-aos="slide-up">
      <h1>Get Involved</h1>
      <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p> 
      
@@ -160,7 +160,7 @@ const Landing =()=> {
       <div className='aboutimage'>
         <img src={involved} alt='aboutus'/>
       </div>
-      <div className='aboutcontent'>
+      <div className='aboutcontent' >
         <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
         <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
         <a href='/getinvolved' className='readmore'>Read More</a>
