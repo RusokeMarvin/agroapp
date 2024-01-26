@@ -41,6 +41,7 @@ function Footer() {
           <button>Send</button>
           </div>
           </div>
+          <p className='copyright'>Copyright ©2024 All rights reserved | AWCI International</p>
         </footer>
     </div>
   )

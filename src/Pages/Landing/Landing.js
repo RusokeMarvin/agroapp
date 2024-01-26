@@ -222,13 +222,13 @@ const Landing =()=> {
 </div>
 <h1 className='heading'>OUR TEAM</h1>
 <div className='team'>
-  <div data-aos="zoom-in" >
+  <div data-aos="zoom-in" className='teambackground'>
     <img src={person1}/>
     <h1>Yusuf Kavuma</h1>
     <h2>Founder and Executive Director</h2>
     <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
   </div>
-  <div data-aos="zoom-in">
+  <div data-aos="zoom-in" className='teambackground'>
     <img src={person2}/>
     <h1>Lugaizi Mujib</h1>
     <h2>Director Finance and Management</h2>
