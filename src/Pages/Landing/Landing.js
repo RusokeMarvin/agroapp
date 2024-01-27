@@ -161,7 +161,7 @@ const Landing =()=> {
         <img src={involved} alt='aboutus'/>
       </div>
       <div className='aboutcontent' >
-        <h2>WOULD YOU LOVE TO BE PART OF THIS INITIATIVE</h2>
+        <h2>Join us</h2>
         <p>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone.</p>
         <a href='/getinvolved' className='readmore'>Read More</a>
       </div>
@@ -174,7 +174,7 @@ const Landing =()=> {
 <br/>
 <div className='combined' data-aos="zoom-in">
 <div className='contactform' >
-  <h2 className='h2'>Contact Form</h2>
+  <h2>Contact Form</h2>
   <form ref={form} onSubmit={sendEmail}>
   <br/>
     <div className='names'>
@@ -223,14 +223,14 @@ const Landing =()=> {
    {successMessage && <p className='success-message'>{successMessage}</p>}
 </div>
 <div className='address'>
-<h2>Address</h2>
-<p>Next to Hexa Oils, St Mark Rd, Namagoma B, Kampala, Uganda</p>
-<h2>Phone</h2>
-<p>+256 741 750-372</p>
-<h2>Email Address</h2>
-<p>info@awciinternational.org</p>
-<h2>Postal Address</h2>
-<p>P.O.Box 116062, Kampala GPO</p>
+<h2 className='h2'>Address</h2>
+<p className='p'>Next to Hexa Oils, St Mark Rd, Namagoma B, Kampala, Uganda</p>
+<h2 className='h2'>Phone</h2>
+<p className='p'>+256 741 750-372</p>
+<h2 className='h2'>Email Address</h2>
+<p className='p'>info@awciinternational.org</p>
+<h2 className='h2'>Postal Address</h2>
+<p className='p'>P.O.Box 116062, Kampala GPO</p>
 </div>
 </div>
 <h1 className='heading'>OUR TEAM</h1>

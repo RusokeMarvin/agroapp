@@ -35,9 +35,8 @@
   width: 50%;
   height: auto;
 }
-.combined .contactform .h2{
+.combined .contactform h2{
   text-align: center;
-  font-weight: bold;
 }
 .combined .contactform form .names{
   display: flex;
@@ -114,7 +113,7 @@
  margin-right: 3em;
  width: 30em;
 }
-.address p, h2{
+.address .p, .h2{
   line-height: 1.7;
   color: gray;
   font-weight: 400;
@@ -122,15 +121,18 @@
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
 
- .address h2{
+ .address .h2{
   font-weight: bold;
   margin-left: 1em;
  }
 
- .address p{
+ .address .p{
   color: #8bc34a;
   margin-left: 1em;
  }
+
+
+ 
 .landing .heading {
   text-align: center;
 }
