@@ -3,9 +3,10 @@ import { useDropzone } from "react-dropzone";
 import { firestore, storage } from "./../../firebase";
 import { collection, addDoc, getDocs, onSnapshot } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import './Feed.css';
+import './Hiddenfeed.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Header from "../../Components/Header/Header";
 
 const LoadingIndicator = () => (
   <div className="loading-indicator">
@@ -95,12 +96,15 @@ const FeedPost = () => {
   }, []);
 
   return (
+    <div>
+      <Header/>
     <div className="feed">
+      
       {loading ? (
         <LoadingIndicator />
       ) : (
         <>
-          <div {...getRootProps()} className="dropzone">
+          <div {...getRootProps()} className="dropzones">
             <input {...getInputProps()} />
             <p>Drag and drop your image or video here, or click to browse</p>
           </div>
@@ -108,13 +112,13 @@ const FeedPost = () => {
             placeholder="Write your post..."
             value={content}
             onChange={(e) => setContent(e.target.value)}
-           className="none"/>
+          />
           <div className="preview-container">
             {acceptedFiles.length > 0 && (
               <img className="media-preview" src={URL.createObjectURL(acceptedFiles[0])} alt="Post image" />
             )}
           </div>
-          <button onClick={handlePostClick} className="none">Post</button>
+          <button onClick={handlePostClick} >Post</button>
           <div className="feed-posts">
             {posts.map((post, index) => (
               <Post key={index} content={post.content} media={post.mediaUrl} />
@@ -122,6 +126,7 @@ const FeedPost = () => {
           </div>
         </>
       )}
+    </div>
     </div>
   );
 };

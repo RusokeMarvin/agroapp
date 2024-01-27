@@ -1,0 +1,62 @@
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dropzones {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .dropzones p {
+    margin: 0;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .feed-posts {
+    margin-top: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post img,
+  .post video {
+    max-width: 100%;
+    height: auto;
+  
+  
+  }
+  
+  /* ... (previous styles) */
+  .preview-container {
+    max-width: 100px;
+    max-height: 100px; /* Adjust the maximum height as needed for the preview */
+    overflow: hidden;
+  }
+  
+  .media-preview {
+    width: 100%;
+    
+    height: auto;
+  }
+  /* ... (previous styles) */
