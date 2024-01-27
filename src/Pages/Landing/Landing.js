@@ -171,8 +171,10 @@ const Landing =()=> {
 <h2 className='contact'  data-aos="slide-up">CONTACT US</h2>
 <h3 className='subcontact'  data-aos="slide-up">Let's Unite to improve our agricultural practices together</h3>
 <p className='subsubcontact' data-aos="slide-up">Thank you for your interest in our Agriculture Initiative. We appreciate your support and collaboration. If you have any questions or would like to get in touch, please feel free to contact us using the following details:</p>
-<div className='contactform' data-aos="zoom-in">
-  <h2>Contact Form</h2>
+<br/>
+<div className='combined' data-aos="zoom-in">
+<div className='contactform' >
+  <h2 className='h2'>Contact Form</h2>
   <form ref={form} onSubmit={sendEmail}>
   <br/>
     <div className='names'>
@@ -219,6 +221,17 @@ const Landing =()=> {
     <br/>
   </form>
    {successMessage && <p className='success-message'>{successMessage}</p>}
+</div>
+<div className='address'>
+<h2>Address</h2>
+<p>Next to Hexa Oils, St Mark Rd, Namagoma B, Kampala, Uganda</p>
+<h2>Phone</h2>
+<p>+256 741 750-372</p>
+<h2>Email Address</h2>
+<p>info@awciinternational.org</p>
+<h2>Postal Address</h2>
+<p>P.O.Box 116062, Kampala GPO</p>
+</div>
 </div>
 <h1 className='heading'>OUR TEAM</h1>
 <div className='team'>
