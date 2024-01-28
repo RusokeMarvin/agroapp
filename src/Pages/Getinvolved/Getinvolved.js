@@ -16,6 +16,9 @@ function Getinvolved() {
     <div >
         <Header/>
         <div className='hands'><img src={involved} className='lets' alt='hands'/></div>
+        <div className='involveds'>
+        <h1 data-aos="slide-right"> TO GET INVOLVED FILL THE CONTACT US FORM ON OUR HOMEPAGE </h1>
+        </div>
         <h1 className='involved'>Get Involved with AWCI Agriculture Initiatives</h1>
         <p className='para1'>Welcome to AWCI Agriculture Initiatives! We invite individuals, organizations, students, and anyone passionate about sustainable agriculture to be part of our transformative projects. Whether you're interested in hands-on engagement, financial support, or spreading awareness, there's a role for everyone</p>
         <h1 className='involved'>Ways to Get Involved</h1>
