@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import seeds from './../../Images/OIL-SEED.jpg'
-import goat from './../../Images/goat1.jpeg'
+import goats from './../../Images/goats.jpg'
 import about from './../../Images/about.jpg'
 import mission from './../../Images/mission.jpeg'
 import vision from './../../Images/vision.jpg'
@@ -47,7 +47,7 @@ const Landing =()=> {
   const images = [
     landing,
     seeds,
-    goat,
+    goats,
     vegs,
     broiler,
   ];
@@ -87,7 +87,7 @@ const Landing =()=> {
           <h3  className="typing-demo">Welcome to AWCI-AGRICULTURE, where agriculture meets social impact!</h3>
         </div>
         <div className='wrapper'>
-          <img src={goat} alt={`Slide 2`} />
+          <img src={goats} alt={`Slide 2`} />
           <div className='pentagon'><h5>Goat Farming </h5></div>
           <h3 className="typing-demo">Dive into the world of goat farming with AWCI-AGRICULTURE</h3>
         </div>

@@ -6,12 +6,11 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import './Feed.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import irrigation from './../../Images/irrigation.jpg'
+import maize from './../../Images/maize.jpg'
+import goats from './../../Images/goats.jpg'
 
-const LoadingIndicator = () => (
-  <div className="loading-indicator">
-    Loading...
-  </div>
-);
+
 const generateTitle = (content) => {
   // Split content into words
   const words = content.split(' ');
@@ -20,7 +19,7 @@ const generateTitle = (content) => {
   const titleLength = Math.min(5, words.length);
 
   // Join the first few words to form the title
-  const title = words.slice(0, titleLength).join(' ').toUpperCase();
+  const title = words.slice(0, titleLength).join(' ');
 
   return title;
 };
@@ -96,10 +95,6 @@ const FeedPost = () => {
 
   return (
     <div className="feed">
-      {loading ? (
-        <LoadingIndicator />
-      ) : (
-        <>
           <div {...getRootProps()} className="dropzone">
             <input {...getInputProps()} />
             <p>Drag and drop your image or video here, or click to browse</p>
@@ -115,13 +110,26 @@ const FeedPost = () => {
             )}
           </div>
           <button onClick={handlePostClick} className="none">Post</button>
+          <div className="post">
+        <img className="media-preview" src={maize} alt="Post image" />
+         <h3>Sustainable Farming</h3>
+         <p>Rooted in Success: Cultivating Prosperity Through Sustainable Plantations. 🌱 Embrace the journey of growth and discover the best agricultural practices to elevate your small-scale farming business. #AgroSuccess #FarmersFirst #SustainableFarming</p>
+        </div>
+        <div className="post">
+        <img className="media-preview" src={irrigation} alt="Post image" />
+         <h3>Smart Irrigation</h3>
+          <p>Nurturing Growth Drop by Drop: Mastering the Art of Efficient Irrigation. 💧 Dive into the world of smart watering practices and empower your small-scale farm with the key to bountiful harvests. #IrrigateSmart #FarmersGrowth #SustainableAgro</p>
+        </div>
+        <div className="post">
+        <img className="media-preview" src={goats} alt="Post image" />
+         <h3>Sustainable Livestock</h3>
+          <p>Nurturing Excellence: Unveiling the Art of Successful Goat Farming. 🐐🌿 Explore the world of sustainable practices, expert care, and successful projects as we delve into the nuances of goat farming. Join us on this journey of growth, where every bleat leads to prosperity. #GoatFarmingMastery #SustainableLivestock #FarmersSuccess</p>
+        </div>
           <div className="feed-posts">
             {posts.map((post, index) => (
               <Post key={index} content={post.content} media={post.mediaUrl} />
             ))}
           </div>
-        </>
-      )}
     </div>
   );
 };
