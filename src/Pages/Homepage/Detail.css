@@ -6,11 +6,12 @@
 
 .detail p{
     font-size: large;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 .detail p{
     border: 1px solid #ddd;
     padding: 10px;
+    margin-right: 0.5em;
     margin-bottom: 10px;
     background: white;
 }
