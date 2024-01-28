@@ -4,11 +4,13 @@
     height: 70vh; 
 }
 
+.detail h1 {
+    text-decoration: underline #4caf50;
+    text-decoration-thickness: 4px;
+  }
 .detail p{
     font-size: large;
     margin-left: 0.5em;
-}
-.detail p{
     border: 1px solid #ddd;
     padding: 10px;
     margin-right: 0.5em;
