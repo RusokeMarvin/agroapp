@@ -112,7 +112,7 @@ const Landing =()=> {
       <div className='aboutcontent' >
         <h2>Explore</h2>
         <p>Learn about our mission, vision, and the team behind AWCI-AGRICULTURE. Explore our journey in creating a positive impact on the agricultural sector and empowering local farmers.</p>
-        <a href='#' className='readmore'>Read More</a>
+        <a href='/about' className='readmore'>Read More</a>
       </div>
     </section>
    </div>
@@ -129,7 +129,7 @@ const Landing =()=> {
       <div className='aboutcontent'>
         <h2>Explore</h2>
         <p>At AWCI-AGRICULTURE, our mission is to elevate the lives of Ugandan farmers by promoting sustainable agriculture and creating opportunities for economic growth through goat farming, broiler chicken rearing, vegetable cultivation, and oil seed value addition.</p>
-        <a href='#' className='readmore'>Read More</a>
+        <a href='/mission' className='readmore'>Read More</a>
       </div>
     </section>
    </div>
@@ -146,7 +146,7 @@ const Landing =()=> {
       <div className='aboutcontent' >
         <h2>Explore</h2>
         <p>A future where Ugandan agriculture is a beacon of sustainability and prosperity, with farmers at the forefront of a thriving and interconnected community, supported by ethical and environmentally conscious practices.</p>
-        <a href='#' className='readmore'>Read More</a>
+        <a href='/vision' className='readmore'>Read More</a>
       </div>
     </section>
    </div>

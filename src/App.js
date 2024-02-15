@@ -12,6 +12,9 @@ import Detail from './Pages/Homepage/Detail';
 import Gallery from './Pages/Gallery/Gallery';
 import Getinvolved from './Pages/Getinvolved/Getinvolved';
 import FeedPost from './Pages/Hiddenfeed/Hiddedfeed';
+import About from './Pages/About/About';
+import Mission from './Pages/Mission/Mission';
+import Vision from './Pages/Vision/Vision';
 
 
 
@@ -27,6 +30,9 @@ function App() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/getinvolved" element={<Getinvolved />} />
       <Route path="/postawci123" element={<FeedPost/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/mission" element={<Mission/>} />
+      <Route path="/vision" element={<Vision/>} />
   </Routes>
  
  </div>
