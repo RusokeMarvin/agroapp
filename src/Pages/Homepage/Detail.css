@@ -24,7 +24,7 @@
     } 
 }
 
-.detail h1 span button{
+.detail span button{
     width: 13em;
     border-radius: 5px;
     margin-left: 2em;
@@ -34,7 +34,7 @@
     color: #4caf50;
 }
 
-.detail h1 span button:hover{
+.detail span button:hover{
     color: #faa51a;
     border: 2px solid #faa51a;
 }
