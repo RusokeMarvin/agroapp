@@ -24,6 +24,7 @@ export default function Home() {
       price={item.price}
       description={item.shortDescription}
     />
+    
   ));
 
   return (

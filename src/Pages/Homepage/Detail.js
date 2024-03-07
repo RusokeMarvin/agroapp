@@ -1,7 +1,7 @@
 import React from
  
 "react";
-import { useLocation } from
+import { Link, useLocation } from
  
 "react-router-dom";
 import Header from "../../Components/Header/Header";
@@ -25,7 +25,7 @@ Detail() {
       {productData && (
         <div className="detail">
           <img src={productData.url} alt={productData.name} />
-          <h1>{productData.name}</h1>
+          <h1>{productData.name}<span><Link to='/others'><button>MORE PRACTICES</button></Link></span></h1> 
           <h2>{productData.headingone}</h2>
           <p>{productData.description}</p>
           <h2>{productData.headingtwo}</h2>

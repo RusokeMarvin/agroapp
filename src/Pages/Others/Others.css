@@ -1,0 +1,9 @@
+.others p{
+    font-size: large;
+    margin-left: 0.5em;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 0.5em;
+    margin-bottom: 10px;
+    background: white;
+}
