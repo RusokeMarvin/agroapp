@@ -12,3 +12,10 @@
     height: 30em;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .sprinkler{
+        height: 20em;
+    } 
+    
+}
