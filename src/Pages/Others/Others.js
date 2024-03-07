@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import './Others.css'
+import sprink from './../../Images/sprink.jpg'
 
 function Others() {
   return (
@@ -121,6 +122,7 @@ function Others() {
             <h3>Components of the System</h3>
            
                 <h4>1. Smart Irrigation Controllers</h4>
+                <img src={sprink} className='sprinkler'/>
                 <h4>Benefits</h4>
                 <ul>
                     <li>Water Efficiency</li>
