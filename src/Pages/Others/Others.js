@@ -3,14 +3,18 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import './Others.css'
 import sprink from './../../Images/sprink.jpg'
+import harvest from './../../Images/harvest.jpg'
+import irrigation from './../../Images/irrigation.jpg'
+import farm from './../../Images/farm.jpg'
+import support from './../../Images/support.jpg'
 
 function Others() {
   return (
     <div>
         <Header/>
         <div className='others'>
-            <h2>Sustainable Practices</h2>
             <h3>Farmers' Integral Responsibilities</h3>
+            <img src={farm} className='sprinkler'/>
             <ul>
             <li>Daily Crop Care and Management</li>
             <p>Local farmers are entrusted with the daily care and management of vegetable crops, including watering, weeding, and monitoring for any signs of pests or diseases.</p>
@@ -27,6 +31,7 @@ function Others() {
             </ul>
 
             <h3> AWCI Farmer Support Processes</h3>
+            <img src={support} className='sprinkler'/>
             <p>At AWCI, our commitment extends beyond farming practices to fostering the success and well-being of our farmers. Our Farmer Support Processes are designed to empower and uplift local communities through comprehensive assistance and guidance.</p>
             <ul>
                 <li>Needs Assessment and Customized Plans</li>
@@ -140,6 +145,7 @@ function Others() {
                 </ul>
 
                 <h4>3. Sprinkler Irrigation System</h4>
+                <img src={irrigation} className='sprinkler'/>
                 <h4>Benefits</h4>
                 <ul>
                     <li>Uniform Coverage</li>
@@ -150,6 +156,7 @@ function Others() {
 
 
                 <h4>4. Rainwater Harvesting</h4>
+                <img src={harvest} className='sprinkler'/>
                 <h4>Benefits</h4>
                 <ul>
                     <li>Reduced Dependency</li>
