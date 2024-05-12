@@ -1,0 +1,40 @@
+.detail img{
+    border-radius: 15px;
+    max-width: 100%; /* Maximum width is the width of the container */
+    height: 70vh; 
+}
+
+.detail h1 {
+    text-decoration: underline #4caf50;
+    text-decoration-thickness: 4px;
+  }
+.detail p{
+    font-size: large;
+    margin-left: 0.5em;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 0.5em;
+    margin-bottom: 10px;
+    background: white;
+}
+
+@media screen and (max-width:768px) {
+    .detail img{
+        height: auto; 
+    } 
+}
+
+.detail span button{
+    width: 13em;
+    border-radius: 5px;
+    margin-left: 2em;
+    height: 2.5em;
+    background: white;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+}
+
+.detail span button:hover{
+    color: #faa51a;
+    border: 2px solid #faa51a;
+}
