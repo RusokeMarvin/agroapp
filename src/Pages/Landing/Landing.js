@@ -1,7 +1,8 @@
 import Header from './../../Components/Header/Header';
 import landing from './../../Images/landing.jpg'
-import person1 from './../../Images/person1.jpg'
-import person2 from './../../Images/person2.jpg'
+import person1 from './../../Images/goats.jpg'
+import person2 from './../../Images/broiler1.jpeg'
+import person3 from './../../Images/irrigation.jpg'
 import './Landing.css'
 import Footer from '../../Components/Footer/Footer';
 import 'slick-carousel/slick/slick.css';
@@ -233,19 +234,25 @@ const Landing =()=> {
 <p className='p'>P.O.Box 116062, Kampala GPO</p>
 </div>
 </div>
-<h1 className='heading'>OUR TEAM</h1>
+<h1 className='heading'>RECENT NEWS</h1>
 <div className='team'>
   <div data-aos="zoom-in" className='teambackground'>
     <img src={person1}/>
-    <h1>Yusuf Kavuma</h1>
-    <h2>Founder and Executive Director</h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
+    <h1>Sustainable Livestock</h1>
+    <p>Nurturing Excellence: Unveiling the Art of Successful Goat Farming.Explore the world of sustainable practices, expert care....</p>
+    <h3>Read More</h3>
   </div>
   <div data-aos="zoom-in" className='teambackground'>
     <img src={person2}/>
-    <h1>Lugaizi Mujib</h1>
-    <h2>Director Finance and Management</h2>
-    <p>Very Delighted to share my knowledge and experience for the betterment of the society</p>
+    <h1>Elevating Broiler Chicken Rearing</h1>
+    <p>From Brood to Bloom: Elevating Broiler Chicken Rearing with Expert Techniques.Discover the art and science behind success...</p>
+    <h3>Read More</h3>
+  </div>
+  <div data-aos="zoom-in" className='teambackground'>
+    <img src={person3}/>
+    <h1>Smart Irrigation</h1>
+    <p>Nurturing Growth Drop by Drop: Mastering the Art of Efficient Irrigation.Dive into the world of smart watering practices and empower your small-scale farm with the key......</p>
+    <h3 className='readmore'>Read More</h3>
   </div>
 </div>
     <Footer/>
