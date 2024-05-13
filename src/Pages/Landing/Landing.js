@@ -11,7 +11,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import seeds from './../../Images/OIL-SEED.jpg'
 import goats from './../../Images/goats.jpg'
-import about from './../../Images/about.jpg'
+import about from './../../Images/about1.jpg'
 import mission from './../../Images/mission.jpeg'
 import vision from './../../Images/vision.jpg'
 import broiler from './../../Images/broiler1.jpeg'
