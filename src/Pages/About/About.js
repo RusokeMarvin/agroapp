@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import about from './../../Images/about.jpg'
+import about from './../../Images/about2.jpeg'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 
