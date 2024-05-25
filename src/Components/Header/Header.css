@@ -1,14 +1,14 @@
 .header nav{
     height: 4em; 
-    background: #a1ce86; 
+    background: #215007; 
     width: 100%;
-    margin-top: -1em;
+    margin-top: -1.25em;
     color: white;
   }
 
   .header nav img{
     height: 60px;
-    width: 60px;
+    width: 80px;
    position: absolute;
    margin-top: -3.9em;
     margin-left: 16.5em;
@@ -86,5 +86,6 @@
     }
     .header nav img{
       margin-left: 15.5em;
+      width: 60px;
     }
   }
