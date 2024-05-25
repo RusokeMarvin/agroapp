@@ -175,6 +175,7 @@ const Landing =()=> {
 <br/>
 <div className='combined' data-aos="zoom-in">
 <div className='contactform' >
+  <br/>
   <h2>Contact Form</h2>
   <form ref={form} onSubmit={sendEmail}>
   <br/>
