@@ -217,7 +217,7 @@ const Landing =()=> {
     </div>
     <br/>
     <div className='fields'>
-    <input type='submit' value="Send" className='submit'/>
+    <button type='submit' value="Send" className='submit'>Send</button>
     </div>
     </div>
     <br/>
