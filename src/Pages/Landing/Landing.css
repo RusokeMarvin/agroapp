@@ -71,12 +71,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-left: -1.0em;
+  margin-left: -0.7em;
 }
 .combined .contactform form .bigfield .fields {
   display: flex;
   flex-direction: column;
-  width: 66%; /* Ensure it takes full width of the parent */
+  width: 79%; /* Ensure it takes full width of the parent */
 }
 .combined .contactform form .names input{
   height: 43px;
