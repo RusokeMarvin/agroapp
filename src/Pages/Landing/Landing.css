@@ -55,8 +55,8 @@
   .combined .contactform form .names{
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    margin-left: -1.4em;
+    width: 80%;
+    margin-left: 0.8em;
   }
 
   .combined .contactform{
