@@ -241,19 +241,19 @@ const Landing =()=> {
     <img src={person1}/>
     <h1>Sustainable Livestock</h1>
     <p>Nurturing Excellence: Unveiling the Art of Successful Goat Farming.Explore the world of sustainable practices, expert care....</p>
-    <h3>Read More</h3>
+    <a href='/blog'><h3>Read More</h3></a>
   </div>
   <div className='teambackground'>
     <img src={person2}/>
     <h1>Elevating Broiler Chicken Rearing</h1>
     <p>From Brood to Bloom: Elevating Broiler Chicken Rearing with Expert Techniques.Discover the art and science behind success...</p>
-    <h3>Read More</h3>
+    <a href='/blog'><h3>Read More</h3></a>
   </div>
   <div className='teambackground'>
     <img src={person3}/>
     <h1>Smart Irrigation</h1>
     <p>Nurturing Growth Drop by Drop: Mastering the Art of Efficient Irrigation.Dive into the world of smart watering practices and empower your small-scale farm with the key......</p>
-    <h3 className='readmore'>Read More</h3>
+    <a href='/blog' className='readmore'><h3 className='readmore'>Read More</h3></a>
   </div>
 </div>
     <Footer/>

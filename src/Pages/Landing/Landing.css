@@ -210,11 +210,12 @@ margin-left: 5px;
 margin-top: -3px;
 }
 
-.landing .team div .readmore{
+.landing .team div a .readmore{
 margin-top: 1.5em;
 color: #017820;
+text-decoration: none;
 }
-.landing .team div h3{
+.landing .team div a h3{
 color: #017820;
 }
 
